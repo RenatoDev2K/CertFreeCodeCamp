@@ -10,6 +10,10 @@ Selector de clase
 }
 */
 
+/* font-family: sans-serif; --> modificación de fuente (se colocan comas para agregar nuevas fuentes en caso de no funcionar la primera) */
+/* font-size: 40px; --> modificación de tamaño de fuente */
+/* Al colocar padding de 20px en todo el menú, este crea un poco mas de espacio en el interior del elemento body */
+
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
@@ -60,12 +64,20 @@ body {
   
   /* margin-left: auto; --> centrado horizontal de margen izquierdo */
   /* margin-right: auto; --> centrado horizontal de margen derecho */
+  /* margin-top: 5px; --> margen superior */
+  /* margin-bottom: 5px; --> margen inferior */
   
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* hr --> Para insertar línea divisora */
+  /* height: 2px --> Las propiedades predeterminadas de un elemento hr harán que luzca como una línea delgada color gris claro. 
+  Puede cambiar la altura de la línea añadiendo una propiedad height y dándole un valor. */
+  /* border-color: brown; --> Modifica color de borde de la línea divisora */
+  /* border-width: 1px; --> Modifica grosor de la línea divisora */
   
   hr {
     height: 2px;
@@ -116,14 +128,19 @@ body {
     color: black;
   }
   
+  /*PSEUDO-SELECTORES*/
+
+  /* Modifica el color cuando el enlace ya haya sido visitado */
   a:visited {
     color: black;
   }
   
+  /* Modifica el color cuando se pasa el ratón sobre el enlace */
   a:hover {
     color: brown;
   }
   
+  /* Modifica el color cuando el enlace está siendo presionado */
   a:active {
     color: brown;
   }
