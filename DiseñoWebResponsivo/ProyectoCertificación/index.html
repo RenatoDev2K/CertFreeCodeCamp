@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingreso de mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Ingreso de mi Mascota</h1>
+    <p id="description">Gracias por unirte a nuestra comunidad.</p>
+    <fieldset>
+    <form id="survey-form">
+      <div class="formal">
+        <label id="name-label">Ingresa el nombre de tu mascota
+          <input id="name" placeholder="¿Cómo se llama tu regalón?" required/>
+        </label>
+      </div>
+      <div class="formal">
+        <label id="email-label">Ingresa tu correo
+          <input id="email" type="email" placeholder="Ej: mimascota@gmail.com" required></input>
+        </label>
+      </div>
+      <div class="formal">
+        <label id="number-label">Ingresa la edad de tu mascota
+          <input id="number" type="number" min="0" max ="50" placeholder="Entre 0 años y 50 años" required></input>
+        </label>
+      </div>
+      <div class="formal">
+        <label id="dropdown-label">¿Qué tipo de animal posees?
+          <select id="dropdown">
+            <option value="">--Selecciona uno--</option>
+            <option value="1">Mamífero</option>
+            <option value="2">Ave</option>
+            <option value="3">Pez</option>
+            <option value="4">Anfibio</option>
+            <option value="5">Reptil</option>
+          </select>
+        </label>
+      </div>
+      <div class="formal">
+        <label>¿Cuántas mascotas tienes?
+          <input type="radio" name="nPet" value="1">1</input>
+          <input type="radio" name="nPet" value="2">Entre 1 y 3</input>
+          <input type="radio" name="nPet" value="3">Más de 3</input>
+        </label>
+      </div>
+      <div class="formal">
+        <label>¿Cómo supiste de nosotros?
+          <input type="checkbox" name="howKnow" value="1">Internet</input>
+          <input type="checkbox" name="howKnow" value="2">Redes sociales</input>
+          <input type="checkbox" name="howKnow" value="3">Amigos</input>
+        </label>
+      </div>
+      <div class="formal">
+        <label>Cuentános un poco de tu mascota
+          <textarea id="petAbout" name="petAbout" rows="5" cols="40" placeholder="Ej: Hace cuánto lo tienes, donde lo conociste, que le gusta hacer, etc."></textarea>
+        </label>
+      </div>
+      <input id="submit" type="submit" value="Ingresar"/>
+    </fieldset>
+    </form>
+  </body>
+</html>
